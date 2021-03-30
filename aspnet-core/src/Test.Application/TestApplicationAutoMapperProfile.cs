@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Test.Projects;
+using Test.Projects.Dto;
 
 namespace Test
 {
@@ -9,6 +11,10 @@ namespace Test
             /* You can configure your AutoMapper mapping configuration here.
              * Alternatively, you can split your mapping configurations
              * into multiple profile classes for a better organization. */
+
+            CreateMap<Project, ProjectDto>();
+            CreateMap<CreateProjectDto, Project>();
+            CreateMap<UpdateProjectDto, Project>();
         }
     }
 }

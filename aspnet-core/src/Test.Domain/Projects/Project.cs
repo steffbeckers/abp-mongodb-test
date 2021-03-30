@@ -8,7 +8,7 @@ namespace Test.Projects
 {
     public class Project : FullAuditedAggregateRoot<Guid>
     {
-        public string Name { get; set; }
+        public string Name { get; private set; }
 
         public Project()
         {
